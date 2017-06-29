@@ -210,7 +210,11 @@ function startTimer() {
 // Add all the handlers necessary to set, start, pause, and reset the timers.
 function init() {
   $("#help").hover(function() {
-      $(this).html("&#8226 Click inside the circles to start or pause the timer.<br>&#8226 Work and rest periods are measured in minutes.<br>&#8226; Adjust the length of the work and rest periods with the '+' and '-' buttons.<br>&#8226; Changing period lengths resets the timer.");
+      $(this).html("&#8226; Click inside the circles to start or pause the timer.<br>"+
+                   "&#8226; Work and rest periods are measured in minutes.<br>"+
+                   "&#8226; Adjust the length of the work and rest periods with the '+' and '-' buttons.<br>"+
+                   "&#8226; Changing period lengths resets the timer.<br>"+
+                   "&#8226; Click the reset button twice to return to default period lengths.");
     },
     function() {
       $(this).html("?");
